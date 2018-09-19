@@ -7,8 +7,8 @@ public class MainInvocationHandler implements InvocationHandler {
     public static final String TAG = MainInvocationHandler.class.getSimpleName();
 
     private Object target;
-    public MainInvocationHandler(MainActivity activity){
-        target = activity;
+    public MainInvocationHandler(Object object){
+        target = object;
     }
 
     @Override
