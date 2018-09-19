@@ -1,7 +1,5 @@
 package com.charlezz.proxyexample;
 
-import android.util.Log;
-
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
@@ -15,9 +13,12 @@ public class MainInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object o, Method method, Object[] objects) throws Throwable {
-        Log.e(TAG,"invoke 하기 전");
+        sendPointToEntryToServer();
         Object result = method.invoke(target, objects);
-        Log.e(TAG,"invoke 한 후");
+
         return result;
+    }
+    private void sendPointToEntryToServer(){
+        // TODO 진입점 클릭정보를 서버로 전송
     }
 }

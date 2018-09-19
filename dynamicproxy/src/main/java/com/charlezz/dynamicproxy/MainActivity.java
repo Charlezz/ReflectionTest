@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         Multiplier multiplier = new Multiplier2x();
         Multiplier multiplierProxy = (Multiplier) Proxy.newProxyInstance(getClassLoader(), new Class[]{Multiplier.class}, new MyProxyHandler(multiplier));
-        int result = multiplierProxy.multiply(2,3);
+        int result = multiplierProxy.multiply(3);
         Log.e(TAG,"result = "+result);
     }
 }
