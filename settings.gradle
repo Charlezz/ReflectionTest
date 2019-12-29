@@ -1,1 +1,1 @@
-include ':reflection', ':dynamicproxy', ':proxyexample'
+include ':reflection', ':dynamicproxy', ':proxyexample', ':java'
