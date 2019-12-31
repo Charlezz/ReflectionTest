@@ -8,9 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/dynamicproxy" />
-            <option value="$PROJECT_DIR$/java" />
-            <option value="$PROJECT_DIR$/proxyexample" />
+            <option value="$PROJECT_DIR$/proxy-advanced" />
+            <option value="$PROJECT_DIR$/proxy-advanced-dagger" />
+            <option value="$PROJECT_DIR$/proxy-java" />
+            <option value="$PROJECT_DIR$/proxy-simple" />
             <option value="$PROJECT_DIR$/reflection" />
           </set>
         </option>

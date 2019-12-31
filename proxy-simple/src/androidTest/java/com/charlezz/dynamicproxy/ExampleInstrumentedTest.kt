@@ -1,4 +1,4 @@
-package com.charlezz.reflection
+package com.charlezz.dynamicproxy
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.charlezz.invocationhandlerexample", appContext.packageName)
+        assertEquals("com.charlezz.sample", appContext.packageName)
     }
 }
